@@ -1,0 +1,119 @@
+{
+
+  'property' : 'ANTIMALARIAL',
+	'data' : [ 'Coartem 80/480mg [Artemether + Lumefantrine (AL) ] Tab.' ,
+ 'P-Alaxin (Dihydroartemisinine + Piperaquine Phosphate) Tab  ' ,
+  'Artesunate 50mg  Tab  ',
+    
+   'sulphadoxine/pyrimethamine(SP)  Tab  ',
+   'Amodiaquine HCL, 200mg  Tab ',
+    'Proguanil HCL, 100mg Tab  ',
+    'Quinine Dihydrochloride, 300mg  Tab ' ,
+  'Chloroquine  Tab ' ,
+   'Arteether  Inj.',
+    'Chloroquine  Inj.',
+    'Quinine Dihydrochloride, 600mg/2ml  Inj.',
+    'P-Alaxin  Susp. ',
+    'Fansidar  Susp. ',
+	'Coartem 20/120 Dispersible ( x6; x12: available based on Kg/body weight) Tab ' ,
+   'Coartem 20/120 [For Patients weighing 25Kg- <35Kg]  Tab ' 
+]
+
+},
+{
+	'property':'COUGH MIXTURES AND ANTITUSIVES' ,
+  'data': ['Emzolyn Expectorant (Adult)' ,
+ 'Emzolyn Expectorant (children)',
+  'Dequadin Lozenge' ,
+  'Rinathiol + Promethazine [Carbocistein + Prometh.] Syr.' ,
+ 'Piriton Expectorant for children Syr.'
+    ]
+},
+{
+	'property':'ANTIBIOTICS',
+  'data' : [  'amoxicillin+clavulanic acid 625mg  Tab ',
+   'amoxicillin+clavunanic Acid 1G  Tab ',
+    'cefuroxime axetil, 500mg  Tab',
+   'ciprofloxacin, 500mg Tab ',
+   'amoxicillin, 500mg Cap.' ,
+   'Erythromycin, 500mg Tab.' ,
+   'Clarithromycin, 500mg Tab.',
+    'Doxycycline, 100mg  Cap.',
+    'Azithromycin, 500mg Cap.' ,
+  'Cefixime, 400mg  Cap.',
+   'Ofloxacin, 200mg  Cap.',
+    'Sparfloxacin,  Cap.' ,
+  'Metronidazole, 200mg Tab.',
+    'Co-trimoxazole, 480mg Tab.',
+    'Secnidazole Tab.',
+    'Nitrofuratoin, 100mg Tab.' ,
+ 'Levofloxacin, 500mg Tab.',
+     'Ceftriaxone, 1G Tab.',
+    'Cefuroxime, 750mg Inj.  ',
+    'Amoxicillin, 500mg Inj.  ',
+     'Gentamycin, 80mg  Inj.  ',
+	'Streptomycin Inj.  ' ,
+ 'Amoxicillin + Clavulanic Acid 600mg Inj.  ',
+    'Amoxicillin, 125mg Susp.' ,
+  'Ampiclox  Susp.  ',
+    'Co-trimoxazole, 240mg/5ml Susp.  ',
+  'Cefuroxime 125mg/5ml Susp. ' ,
+ 'Susp.  Amoxicillin + Clavulanic Acid228mg/5ml Susp. ',
+     'Metronidazole, 200mg/5ml Susp.   ',
+   'Azithromycin, 200mg/5ml Susp.   ' ,
+   'Cefixime, 100mg/5ml  Susp.   ' ,
+ 'Ampiclox  Susp.  '
+
+]
+
+},
+
+{
+'property':'HAEMATINICS',
+'data' : [ 'Vitamin C,100mg  Tab.',
+ 'Vitamin B complex  Tab.',
+ 'Multivite Tab.      ',
+  'Folic acid,5mg Tab.      ',
+  'Meta B fort[Vitamins B1; B6; &B12] Tab.      ',
+  'Yeast Tab.      ',
+  'Caicium lactate Tab.      ',
+  'Synovit [multivitamins, minerals + Selenium] Tab.      ',
+ 'Ferofer[Iron (iii) Hydroxide Polymatose Complex+Cynocobalamin+Zinc Sulphate+Folic Acid] Cap.',
+  'Aminopep Syr.',
+ 'Multamin  Syr.',
+  'Multivite Syr.',
+ 'Ferofer Syr.',
+   'Vitamin B complex Syr.',
+ 'Eldervit – 12 [Vit.C,150mg+ Vit.B12,2500mcg+ FolicAcid,0.7mg+Niacinamide,12mg] Inj.',
+  'Astymin Cap.',
+   'Vit. C Syr.' ,
+ 'Vit B Co. Inj.'
+  
+]
+},
+{
+'property':'ANTIHYPERTENSIVES',
+'data' : [
+  'Aspirin,75mg[low dose]  Tab.      ',
+  'Moduretic Tab.      ' ,
+'Lisinopril,10mg Tab.      ',
+ 'Methyldopa,250mg Tab.      ',
+  'Nifedipine,20mg Tab.      ',
+ 'Amlodipine,5mg Tab.      ',
+  'Hydrochlorothiazide,25mg Tab.      ',
+ 'Propanolol,40mg Tab.      ' ,
+ 'Ramipril,5mg Tab.      ',
+ 'Frusemide Inj.',
+  'Atenolol Tab.',
+ 'Co-diovan[80mg +12.5mg] Tab.'
+ 
+
+]
+
+},
+
+{
+
+'property':'ANALGESICS/ANTISPAMODICS/MUSCLE RELAXANT',
+'data' : []
+},

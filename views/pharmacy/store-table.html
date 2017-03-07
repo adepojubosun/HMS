@@ -1,0 +1,51 @@
+
+{% extends 'pharmacy-layout.html' %}
+
+
+
+
+{% block title %}   {% endblock %} 
+
+
+
+{% block content %}
+
+               <section class="vbox">
+                        <section class="scrollable padder">
+                            <div class="m-b-md">
+                                <h3 class="m-b-none">Store Inventory</h3> </div>
+                            <section class="panel panel-default">
+                                <div class="row wrapper">
+                                    <div class="col-sm-3">
+                                        <div class="input-group">
+                                            <input type="text" class="input-sm form-control" placeholder="Search"> <span class="input-group-btn"> <button class="btn btn-sm btn-default" type="button">Go!</button> </span>                                            </div>
+                                    </div>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-striped b-t b-light">
+                                        <thead>
+                                            <tr>
+                                                <th class="th-sortable" data-toggle="class">Item<span class="th-sort"> <i class="fa fa-sort-down text"></i> <i class="fa fa-sort-up text-active"></i> <i class="fa fa-sort"></i> </span>                                                    </th>
+                                                <th class="th-sortable" data-toggle="class">Supplier<span class="th-sort"> <i class="fa fa-sort-down text"></i> <i class="fa fa-sort-up text-active"></i> <i class="fa fa-sort"></i> </span> </th>
+                                                <th>Strength</th>
+                                                <th>Lot No.</th>
+                                                <th>Balance</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            {% for data in supply_data %}
+                                            <tr>
+                                                <td>{{data.item.name}}</td>
+                                                <td>{{data.supplier}}</td>
+                                                <td>{{data.strength}}</th>
+                                                <td>{{data.lotNo}}</td>
+                                                <td>{{data.quantity_value}}</td>
+                                            </tr>
+                                            {% endfor %}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </section>
+                        </section>
+                    </section>
+{% endblock %}

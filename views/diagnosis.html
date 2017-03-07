@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" class="app">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Scale | Web Application</title>
+    <meta name="description" content="app, web app, responsive, admin dashboard, admin, flat, flat ui, ui kit, off screen nav"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="css/app.css" type="text/css" />
+    <link rel="stylesheet" href="js/datepicker/datepicker.css" type="text/css" />
+    <link rel="stylesheet" href="js/slider/slider.css" type="text/css" />
+    <link rel="stylesheet" href="js/chosen/chosen.css" type="text/css" />
+    <link rel="stylesheet" href="js/spinner/jquery.bootstrap-touchspin.css" type="text/css" />
+    <link rel="stylesheet" href="js/typehead/typehead.css" type="text/css" />
+    <!--[if lt IE 9]> <script src="js/ie/html5shiv.js"></script> <script src="js/ie/respond.min.js"></script> <script src="js/ie/excanvas.js"></script> <![endif]-->
+</head>
+
+<body class="">
+    <section class="vbox">
+        <header class="bg-white header header-md navbar navbar-fixed-top-xs box-shadow">
+            <div class="navbar-header aside-md dk">
+                <a class="btn btn-link visible-xs" data-toggle="class:nav-off-screen,open" data-target="#nav,html">x<i class="fa fa-bars"></i> </a>
+                <a href="index.html" class="navbar-brand"> <img src="images/logo.png" class="m-r-sm" alt="scale"> <span class="hidden-nav-xs">RUNMED</span> </a>
+                <a class="btn btn-link visible-xs" data-toggle="dropdown" data-target=".user">x<i class="fa fa-cog"></i> </a>
+            </div>
+            <ul class="nav navbar-nav navbar-right m-n hidden-xs nav-user user">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <span class="thumb-sm avatar pull-left"> <img src="images/a0.png" alt="..."> </span> Tomisin.Oyegoke <b class="caret"></b>                        </a>
+                    <ul class="dropdown-menu animated fadeInRight">
+                        <li> <a href="modal.lockme.html" data-toggle="ajaxModal">Logout</a> </li>
+                    </ul>
+                </li>
+            </ul>
+        </header>
+        <section>
+            <section class="hbox stretch">
+                <!-- .aside -->
+                <aside class="bg-black aside-md hidden-print hidden-xs" id="nav">
+                    <section class="vbox">
+                        <section class="w-f scrollable">
+                            <div class="slim-scroll" data-height="auto" data-disable-fade-out="true" data-distance="0" data-size="10px"
+                            data-railOpacity="0.2">
+                                <div class="clearfix wrapper dk nav-user hidden-xs">
+                                    <div class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <span class="thumb avatar pull-left m-r"> <img src="images/a0.png" class="dker" alt="..."> <i class="on md b-black"></i> </span>                                            <span class="hidden-nav-xs clear"> <span class="block m-t-xs"> <strong class="font-bold text-lt">John.Smith</strong> <b class="caret"></b> </span>                                            <span class="text-muted text-xs block">Art Director</span> </span>
+                                        </a>
+                                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                            <li> <span class="arrow top hidden-nav-xs"></span> <a href="#">Settings</a> </li>
+                                            <li> <a href="profile.html">Profile</a> </li>
+                                            <li>
+                                                <a href="#"> <span class="badge bg-danger pull-right">3</span> Notifications </a>
+                                            </li>
+                                            <li> <a href="docs.html">Help</a> </li>
+                                            <li class="divider"></li>
+                                            <li> <a href="modal.lockme.html" data-toggle="ajaxModal">Logout</a> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- nav -->
+                                <!-- / nav -->
+                            </div>
+                        </section>
+                        <footer class="footer hidden-xs no-padder text-center-nav-xs">
+                            <a href="modal.lockme.html" data-toggle="ajaxModal" class="btn btn-icon icon-muted btn-inactive pull-right m-l-xs m-r-xs hidden-nav-xs">
+                            <i class="i i-logout"></i> </a>
+                            <a href="#nav" data-toggle="class:nav-xs" class="btn btn-icon icon-muted btn-inactive m-l-xs m-r-xs">
+                            <i class="i i-circleleft text"></i> <i class="i i-circleright text-active"></i> </a>
+                        </footer>
+                    </section>
+                </aside>
+                <!-- /.aside -->
+                <section id="content">
+                    <section class="vbox">
+                        <section class="scrollable bg-white">
+                            <div class="wrapper-lg bg-light">
+                                <div class="hbox">
+                                    <aside class="aside-md">
+                                        <div class="text-center"> <img src="images/a2.png" alt="..." class="img-circle m-b">
+                                        </div>
+                                    </aside>
+                                    <aside>
+                                        <div class="tab-pane wrapper-lg">
+                                            <div class="row m-b">
+                                                <div class="col-xs-6"> <small>Full Name</small>
+                                                    <div class="text-lt font-bold">Awobayikun Anjolaoluwa Ayomide</div>
+                                                </div>
+                                                <div class="col-xs-6"> <small>Matric Number</small>
+                                                    <div class="text-lt font-bold">RUN/CMP/12/46/</div>
+                                                </div>
+                                            </div>
+                                            <div class="row m-b">
+                                                <div class="col-xs-6"> <small>Department</small>
+                                                    <div class="text-lt font-bold">Computer Science</div>
+                                                </div>
+                                                <div class="col-xs-6"> <small>Course</small>
+                                                    <div class="text-lt font-bold">Computer Science</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </aside>
+                                </div>
+                            </div>
+                            <ul class="nav nav-tabs m-b-n-xxs bg-light">
+                                <li class="active"> <a href="#edit" data-toggle="tab" class="m-l">Diagnosis</a> </li>
+                                <li> <a href="#bio" data-toggle="tab">Full Bio</a> </li>
+                                <li> <a href="#activities" data-toggle="tab">History</a></li>
+                                <li> <a href="#prescription" data-toggle="tab">Prescription</a></li>
+                            </ul>
+                                <div class="tab-content">
+                                    <div class="panel tab-pane" id="activities">
+                                        <ul class="list-group no-radius m-b-none m-t-n-xxs list-group-lg no-border">
+                                            <li class="list-group-item">
+                                                <a href="#" class="thumb-sm pull-left m-r-sm"> <img src="images/a0.png" class="img-circle"> </a>
+                                                <a href="#" class="clear">
+                                                <small class="pull-right">Date</small> <strong class="block">Dr name</strong>                                                <small>Subject</small> </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-pane wrapper-lg" id="bio">
+                                        <div> <small>Bio</small>
+                                            <div class="text-lt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id neque quam. Aliquam
+                                                sollicitudin venenatis ipsum ac feugiat. Vestibulum ullamcorper sodales nisi
+                                                nec condimentum. Mauris convallis mauris at pellentesque volutpat. Phasellus
+                                                at ultricies neque, quis malesuada augue.</div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane wrapper-lg active" id="edit">
+                                        <form class="form-horizontal" method="get">
+                                            <div class="form-group">
+                                                <label class="col-sm-1 control-label">Subject</label>
+                                                <div class="col-sm-3">
+                                                    <input type="text" class="form-control"> </div>
+                                            </div>
+                                            <div class="line line-dashed b-b line-lg pull-in"></div>
+                                            <div class="form-group">
+                                                <label class="col-sm-1 control-label">Dr Notes</label>
+                                                <div class="col-sm-3">
+                                                    <textarea class="form-control" rows="10"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-sm-offset-3 col-sm-5">
+                                                    <button type="submit" class="btn btn-sm btn-primary">Update</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="tab-pane wrapper-lg" id="prescription">
+                                        <form class="form-horizontal" method="get">
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">Item</label>
+                                                <div class="col-sm-3">
+                                                    <select style="width:260px" class="chosen-select">
+                                                        <optgroup label="Alaskan/Hawaiian Time Zone">
+                                                            <option value="AK">Alaska</option>
+                                                            <option value="HI">Hawaii</option>
+                                                        </optgroup>
+                                                        <optgroup label="Pacific Time Zone">
+                                                            <option value="CA">California</option>
+                                                            <option value="NV">Nevada</option>
+                                                            <option value="OR">Oregon</option>
+                                                            <option value="WA">Washington</option>
+                                                        </optgroup>
+                                                        <optgroup label="Mountain Time Zone">
+                                                            <option value="UT">Utah</option>
+                                                            <option value="WY">Wyoming</option>
+                                                        </optgroup>
+                                                        <optgroup label="Central Time Zone">
+                                                            <option value="AL">Alabama</option>
+                                                            <option value="AR">Arkansas</option>
+                                                            <option value="IL">Illinois</option>
+                                                            <option value="IA">Iowa</option>
+                                                            <option value="KS">Kansas</option>
+                                                        </optgroup>
+                                                        <optgroup label="Eastern Time Zone">
+                                                            <option value="VA">Virginia</option>
+                                                            <option value="WV">West Virginia</option>
+                                                        </optgroup>
+                                                    </select>
+                                                </div>
+                                                <div class="line line-dashed b-b line-lg pull-in"></div>
+                                                <label class="col-sm-2 control-label">Quantity</label>
+                                                <div class="col-sm-10">
+                                                    <div class="input-group input-s-sm">
+                                                        <input type="text" id="appendedInput" class="input-sm form-control">
+                                                        <div class="input-group-btn">
+                                                            <button class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+                                                                <span class="dropdown-label">TBLTS</span> <span class="caret"></span>                                                            </button>
+                                                            <ul class="dropdown-menu dropdown-select pull-right">
+                                                                <li class="active">
+                                                                    <a href="#">
+                                                                        <input type="radio" value="USD" name="pay_unit" checked="">USD</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        <input type="radio" value="GBP" name="pay_unit">GBP</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="line line-dashed b-b line-lg pull-in"></div>
+                                                <div class="col-sm-4 col-sm-offset-2">
+                                                    <button type="submit" class="btn btn-default">Cancel</button>
+                                                    <button type="submit" class="btn btn-primary">Done</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </section>
+                    <a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen,open" data-target="#nav,html"></a>
+                </section>
+            </section>
+        </section>
+    </section>
+    <!-- Bootstrap -->
+    <!-- App -->
+    <script src="js/app.js"></script>
+
+                <!-- datepicker -->
+                <script src="js/datepicker/bootstrap-datepicker.js"></script>
+                <!-- slider -->
+                <script src="js/slider/bootstrap-slider.js"></script>
+                <!-- file input -->
+                <script src="js/file-input/bootstrap-filestyle.min.js"></script>
+                <!-- wysiwyg -->
+                <script src="js/wysiwyg/jquery.hotkeys.js"></script>
+                <script src="js/wysiwyg/bootstrap-wysiwyg.js"></script>
+                <script src="js/wysiwyg/demo.js"></script>
+                <!-- markdown -->
+                <script src="js/markdown/epiceditor.min.js"></script>
+                <script src="js/markdown/demo.js"></script>
+                <script src="js/chosen/chosen.jquery.min.js"></script>
+                <script src="js/spinner/jquery.bootstrap-touchspin.min.js"></script>
+                <script src="js/typehead/typeahead.bundle.min.js"></script>
+                <script src="js/typehead/demo.js"></script>
+                <script src="js/app.plugin.js"></script>
+</body>
+
+</html>

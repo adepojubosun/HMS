@@ -1,0 +1,130 @@
+{% extends 'pharmacy-layout.html' %}
+
+
+
+
+ {% block title %} {% endblock %} 
+ 
+ 
+ 
+ {% block content %}
+                    <section class="vbox">
+                        <section class="scrollable padder">
+                            <div class="m-b-md">
+                                <h3 class="m-b-none">Register Item</h3> </div>
+                     
+                            <section class="panel panel-default">
+                                
+                                <div class="panel-body">
+                                    <form class="form-horizontal" method="POST">
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">Item</label>
+                                            <div class="col-sm-10">
+                                                <input name="item" type="text" class="form-control" id="typehead" placeholder="e.g Panadol"> </div>
+                                        </div>
+                                        <div class="line line-dashed b-b line-lg pull-in"></div>
+                                        
+                                        <div class="form-group">
+                                            
+                                                
+                                                    <label class="col-sm-2 control-label">Item Class</label>
+                                                    <div class="col-sm-4">
+                                                        <div class="m-b">
+                                                            <div class="form-group">
+                        <div class="col-sm-10">
+
+                            <select name="itemClass" style="width:300px" class="chosen-select">
+                                {% for classes in item_classes %}
+                                <option value="{{classes}}">{{classes}}</option>
+                                {% endfor %}
+                            </select>
+
+                        </div>
+                                        </div>
+                                                        <a href="#modal-form" class="btn btn-success" data-toggle="modal">Not Available ? Add New Class</a> </form>
+                                                    </div>
+                                                    
+                                                    </div>
+                                                
+                                            
+                                        </div>
+                                        
+                                        <div class="line line-dashed b-b line-lg pull-in"></div>
+                                        <div class="form-group">
+                                            <div class="col-sm-8">
+                                                <div class="row">
+                                                    <label class="col-sm-2 control-label">Name</label>
+                                                    <div class="col-sm-4">
+                                                <div class="m-b">
+                                                    <input name="name" class="form-control input-sm" type="text" placeholder="e.g Quinine Dihydrochloride, 600mg/2ml  Inj.">
+                                                </div>
+                                            </div>
+                                            
+                                                    <label class="col-sm-4 control-label">Measurement</label>
+                                                   <div class="col-sm-3">
+                                                
+                                               <div class="col-md-6">
+                                                        <div class="btn-group m-r">
+                                                            <button data-toggle="dropdown" class="btn btn-sm btn-default dropdown-toggle">
+                                                               <span class="dropdown-label">select item</span> <span class="caret"></span>                                                              </button>
+                                                            <ul class="dropdown-menu dropdown-select">
+                                                                <li class="active">
+                                                                    <a href="#">
+                                                                        <input type="radio" name="measurement" checked="" value="packets">Packets</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        <input type="radio" name="measurement" value="bottles">Bottles</a>
+                                                                        
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        <input type="radio" name="measurement" value="tablets">Tablets</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        <input type="radio" name="measurement" value="amp">Amp</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                        <div class="line line-dashed b-b line-lg pull-in"></div>
+                                        <div class="form-group">
+                                            <div class="col-sm-4 col-sm-offset-2">
+                                                <button type="submit" class="btn btn-primary">Register Item</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </section>
+                        </section>
+                    </section>
+                    	<div class="modal fade" id="modal-form">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body wrapper-lg">
+					<div class="row">
+						<div class="col-sm-6 b-r">
+							<h3 class="m-t-none m-b">Add New Item Class</h3>
+							<form method="POST"  id="modal-form" role="form">
+								<div class="form-group">
+									<label><b>Class Name</b></label>
+									<input name="item_class" type="text" class="form-control" placeholder="Enter Name"> </div>
+								<div class="checkbox m-t-lg">
+									<button id="modal-form"  data-target="#modal-form" class="btn btn-sm btn-success pull-right text-uc m-t-n-xs"><strong>Add</strong></button>
+								</div>
+							</form>
+                            
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+                    {% endblock %}

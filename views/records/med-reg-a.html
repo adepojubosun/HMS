@@ -1,0 +1,356 @@
+ {% extends 'record-nav.html' %}
+
+
+
+
+    {% block title %} {% endblock %} 
+
+
+
+    {% block content %}
+        <section class="vbox">
+            <section class="scrollable padder">
+                <div class="m-b-md">
+                    <h3 class="m-b-none">Bio Data</h3>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <form id="wizardform" method="get" action="">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <ul class="nav nav-tabs font-bold">
+                                        <li><a href="#step1" data-toggle="tab">Step 1</a></li>
+                                        <li><a href="#step2" data-toggle="tab">Step 2</a></li>
+                                        <li><a href="#step3" data-toggle="tab">Step 3</a></li>
+                                    </ul>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="line line-lg"></div>
+                                    <h4>Validate Form</h4>
+                                    <div class="progress progress-xs m-t-md">
+                                        <div class="progress-bar bg-success"></div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <div class="tab-pane" id="step1">
+                                            <p>Your website:</p>
+                                            <input type="text" class="form-control" data-trigger="change" data-required="true" data-type="url" placeholder="website">
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <div class="m-b-md">
+                                                        <h3 class="m-b-none">MEDICAL REGISTRATION FORM</h3>
+                                                    </div>
+                                                    <section class="panel panel-default">
+                                                        <div class="panel-body">
+                                                            <form class="form-horizontal" method="get">
+                                                                <div class="form-group">
+                                                                    <div class="col-sm-10">
+                                                                        <div class="row">
+                                                                            <label class="col-sm-3 control-label">General Appearance</label>
+                                                                            <div class="col-sm-8">
+                                                                                <input class="form-control input-sm" type="text" placeholder="Other">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="line line-dashed b-b line-lg pull-in"></div>
+                                                                <div class="form-group">
+                                                                    <div class="col-sm-10">
+                                                                        <div class="row">
+                                                                            <label class="col-sm-3 control-label">Weight</label>
+                                                                            <div class="col-sm-3">
+                                                                                <input class="form-control input-sm" type="text" placeholder="Other">
+                                                                            </div>
+                                                                            <label class="col-sm-3 control-label">Height</label>
+                                                                            <div class="col-sm-3">
+                                                                                <input class="form-control input-sm" type="text" placeholder="Other">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="line line-dashed b-b line-lg pull-in"></div>
+                                                                <div class="form-group">
+                                                                    <div class="col-sm-10">
+                                                                        <div class="row">
+                                                                            <label class="col-sm-3 control-label">Blood Pressure</label>
+                                                                            <div class="col-sm-3">
+                                                                                <input class="form-control input-sm" type="text" placeholder="Other">
+                                                                            </div>
+                                                                            <label class="col-sm-3 control-label">Pulse rate</label>
+                                                                            <div class="col-sm-3">
+                                                                                <input class="form-control input-sm" type="text" placeholder="Other">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="line line-dashed b-b line-lg pull-in"></div>
+                                                                <div class="form-group">
+                                                                    <div class="col-sm-10">
+                                                                        <div class="row">
+                                                                            <label class="col-sm-3 control-label">Vision Visual Acuity</label>
+                                                                            <div class="col-sm-3">
+                                                                                <input class="form-control input-sm" type="text" placeholder="With Glasses">
+                                                                            </div>
+                                                                            <div class="col-sm-3">
+                                                                                <input class="form-control input-sm" type="text" placeholder="Without Glasses">
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="line line-dashed b-b line-lg pull-in"></div>
+                                                                <div class="form-group">
+                                                                    <div class="col-sm-10">
+                                                                        <div class="row">
+                                                                            <label class="col-sm-3 control-label">Hearing</label>
+                                                                            <div class="col-sm-3">
+                                                                                <input class="form-control input-sm" type="text" placeholder="Left">
+                                                                            </div>
+                                                                            <div class="col-sm-3">
+                                                                                <input class="form-control input-sm" type="text" placeholder="Right">
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="line line-dashed b-b line-lg pull-in"></div>
+                                                                <div class="form-group">
+                                                                    <div class="col-sm-10">
+                                                                        <div class="row">
+                                                                            <label class="col-sm-3 control-label">System Examination</label>
+                                                                            <div class="col-sm-3">
+                                                                                <input class="form-control input-sm" type="text" placeholder="CVS">
+                                                                            </div>
+                                                                            <div class="col-sm-3">
+                                                                                <input class="form-control input-sm" type="text" placeholder="Respiratory System">
+                                                                            </div>
+
+                                                                        </div>
+                                                                        <div class="line line-dashed b-b line-lg pull-in"></div>
+                                                                        <div class="row">
+                                                                            <label class="col-sm-3 control-label"></label>
+                                                                            <div class="col-sm-3">
+                                                                                <input class="form-control input-sm" type="text" placeholder="GIT/GUT">
+                                                                            </div>
+                                                                            <div class="col-sm-3">
+                                                                                <input class="form-control input-sm" type="text" placeholder="MSS">
+                                                                            </div>
+                                                                            <div class="col-sm-3">
+                                                                                <input class="form-control input-sm" type="text" placeholder="CNS">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </section>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <div class="m-b-md">
+                                                        <h3 class="m-b-none">General Information</h3>
+                                                    </div>
+                                                    <section class="panel panel-default">
+                                                        <div class="panel-body">
+                                                            <form class="form-horizontal" method="get">
+                                                                <div class="form-group">
+                                                                    <div class="col-sm-10">
+                                                                        <div class="row">
+                                                                            <label class="col-sm-1 control-label">Name</label>
+                                                                            <div class="col-sm-3">
+                                                                                <input class="form-control input-sm" type="text" placeholder="Other">
+                                                                            </div>
+                                                                            <label class="col-sm-1 control-label">Date</label>
+                                                                            <div class="col-sm-3">
+                                                                                <input class="form-control input-sm" type="text" placeholder="Other">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="line line-dashed b-b line-lg pull-in"></div>
+                                                                <div class="form-group">
+                                                                    <div class="col-sm-10">
+                                                                        <div class="row">
+                                                                            <label class="col-sm-2 control-label">Marital Status</label>
+                                                                            <div class="col-sm-2">
+                                                                                <input class="form-control input-sm" type="text" placeholder="Other">
+                                                                            </div>
+                                                                            <label class="col-sm-1 control-label">Age</label>
+                                                                            <div class="col-sm-3">
+                                                                                <input class="form-control input-sm" type="text" placeholder="Other">
+                                                                            </div>
+                                                                            <label class="col-sm-1 control-label">Village</label>
+                                                                            <div class="col-sm-3">
+                                                                                <input class="form-control input-sm" type="text" placeholder="Other">
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="line line-dashed b-b line-lg pull-in"></div>
+                                                                <div class="form-group">
+                                                                    <div class="col-sm-10">
+                                                                        <div class="row">
+                                                                            <label class="col-sm-3 control-label">Past Medical & Surgical History</label>
+                                                                            <div class="col-sm-9">
+                                                                                <input class="form-control input-sm" type="text" placeholder="Other">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="line line-dashed b-b line-lg pull-in"></div>
+                                                                <div class="form-group">
+                                                                    <div class="col-sm-10">
+                                                                        <div class="row">
+                                                                            <label class="col-sm-3 control-label">Past Family History</label>
+                                                                            <div class="col-sm-9">
+                                                                                <input class="form-control input-sm" type="text" placeholder="Other">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </section>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="tab-pane" id="step2">
+                                            <p>Your email:</p>
+                                            <input type="text" class="form-control" data-trigger="change" data-required="true" data-type="email" placeholder="email address">
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <div class="m-b-md">
+                                                        <h3 class="m-b-none">Laboratoty Investigation</h3>
+                                                    </div>
+                                                    <section class="panel panel-default">
+                                                        <div class="panel-body">
+                                                            <form class="form-horizontal" method="get">
+                                                                <div class="form-group">
+                                                                    <div class="col-sm-10">
+                                                                        <div class="row">
+                                                                            <label class="col-sm-2 control-label">Urinalysis</label>
+                                                                            <div class="col-sm-2">
+                                                                                <input class="form-control input-sm" type="text" placeholder="...">
+                                                                            </div>
+                                                                            <label class="col-sm-1 control-label">GLU</label>
+                                                                            <div class="col-sm-2">
+                                                                                <input class="form-control input-sm" type="text" placeholder="...">
+                                                                            </div>
+                                                                            <label class="col-sm-2 control-label">Any other</label>
+                                                                            <div class="col-sm-2">
+                                                                                <input class="form-control input-sm" type="text" placeholder="...">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="line line-dashed b-b line-lg pull-in"></div>
+                                                                <div class="form-group">
+                                                                    <div class="col-sm-11">
+                                                                        <div class="row">
+                                                                            <label class="col-sm-2 control-label">FBC:PCV</label>
+                                                                            <div class="col-sm-2">
+                                                                                <input class="form-control input-sm" type="text" placeholder="...">
+                                                                            </div>
+                                                                            <label class="col-sm-2 control-label">Total WCC</label>
+                                                                            <div class="col-sm-2">
+                                                                                <input class="form-control input-sm" type="text" placeholder="...">
+                                                                            </div>
+                                                                            <label class="col-sm-2 control-label">Diff WCC</label>
+                                                                            <div class="col-sm-2">
+                                                                                <input class="form-control input-sm" type="text" placeholder="...">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="line line-dashed b-b line-lg pull-in"></div>
+
+                                                                <div class="form-group">
+                                                                    <div class="col-sm-10">
+                                                                        <div class="row">
+                                                                            <label class="col-sm-3 control-label">Blood Group</label>
+                                                                            <div class="col-sm-2">
+                                                                                <input class="form-control input-sm" type="text" placeholder="...">
+                                                                            </div>
+                                                                            <label class="col-sm-1 control-label">Genotype</label>
+                                                                            <div class="col-sm-3">
+                                                                                <input class="form-control input-sm" type="text" placeholder="...">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="line line-dashed b-b line-lg pull-in"></div>
+                                                                <div class="form-group">
+                                                                    <div class="col-sm-10">
+                                                                        <div class="row">
+                                                                            <label class="col-sm-3 control-label">Hbs Ag</label>
+                                                                            <div class="col-sm-2">
+                                                                                <input class="form-control input-sm" type="text" placeholder="...">
+                                                                            </div>
+                                                                            <label class="col-sm-2 control-label">HIV I&II</label>
+                                                                            <div class="col-sm-3">
+                                                                                <input class="form-control input-sm" type="text" placeholder="...">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="line line-dashed b-b line-lg pull-in"></div>
+                                                                <div class="form-group">
+                                                                    <div class="col-sm-10">
+                                                                        <div class="row">
+                                                                            <label class="col-sm-3 control-label">Chest X-Ray</label>
+                                                                            <div class="col-sm-9">
+                                                                                <input class="form-control input-sm" type="text" placeholder="Other">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </section>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="step3">
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <div class="m-b-md">
+                                                        <h3 class="m-b-none">General Comment</h3>
+                                                    </div>
+                                                    <section class="panel panel-default">
+                                                        <div class="panel-body">
+                                                            <form class="form-horizontal" method="get">
+                                                                <div class="form-group">
+                                                                    <div class="col-sm-10">
+                                                                        <div class="row">
+                                                                            <label class="col-sm-3 control-label"></label>
+                                                                            <div class="col-sm-9">
+                                                                                <textarea type="text input-sm" class="form-control" placeholder="..."></textarea>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </section>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul class="pager wizard m-b-sm">
+                                            <li class="previous first" style="display:none;"><a href="#">First</a></li>
+                                            <li class="previous"><a href="#">Previous</a></li>
+                                            <li class="next last" style="display:none;"><a href="#">Last</a></li>
+                                            <li class="next"><a href="#">Next</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </section>
+    {% endblock %}

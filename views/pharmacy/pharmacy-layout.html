@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" class="app">
+
+<head>
+    <meta charset="utf-8" />
+    <title>REDEEMERS UNIVERSITY CLINIC | PHARMACY</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+   <link rel="stylesheet" href="/stylesheets/app.css" type="text/css" />  
+     <link rel="stylesheet" href="/stylesheets/app.v1.css" type="text/css" /> 
+    <link rel="stylesheet" href="/js/chosen/chosen.css" type="text/css"/> 
+      <link rel="stylesheet" href="/js/datepicker/datepicker.css" type="text/css"/> 
+       <link rel="stylesheet" href="/js/typehead/typehead.css" type="text/css"/> 
+      
+    <!--[if lt IE 9]> <script src="js/ie/html5shiv.js"></script> <script src="js/ie/respond.min.js"></script> <script src="js/ie/excanvas.js"></script> <![endif]-->
+</head>
+
+<body class="">
+ <section class="vbox">
+        <header class="bg-white header header-md navbar navbar-fixed-top-xs box-shadow">
+            <div class="navbar-header aside-md dk">
+                <a class="btn btn-link visible-xs" data-toggle="class:nav-off-screen,open" data-target="#nav,html">x<i class="fa fa-bars"></i> </a>
+                <a href="/pharmacy/timeline" class="navbar-brand"> <img src="/images/logo.png" class="m-r-sm" alt="scale"> <span class="hidden-nav-xs">RUNMED PHARMACY</span> </a>
+                <a class="btn btn-link visible-xs" data-toggle="dropdown" data-target=".user">x<i class="fa fa-cog"></i> </a>
+            </div>
+            <ul class="nav navbar-nav navbar-right m-n hidden-xs nav-user user">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <span class="thumb-sm avatar pull-left"> <img src="/images/a0.png" alt="..."> </span> {{name}} <b class="caret"></b>                        </a>
+                    <ul class="dropdown-menu animated fadeInRight">
+                        <li> <a href="/pharmacy/logout" >Logout</a> </li>
+                    </ul>
+                </li>
+            </ul>
+        </header>
+        <section>
+            <section class="hbox stretch">
+                <!-- .aside -->
+                <aside class="bg-black aside-md hidden-print hidden-xs" id="nav">
+                    <section class="vbox">
+                        <section class="w-f scrollable">
+                            <div class="slim-scroll" data-height="auto" data-disable-fade-out="true" data-distance="0" data-size="10px"
+                            data-railOpacity="0.2">
+                                <div class="clearfix wrapper dk nav-user hidden-xs">
+                                    <div class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <span class="thumb avatar pull-left m-r"> <mg src="images/a0.png" class="dker" alt="..."> <i class="on md b-black"></i> </span>                                            <span class="hidden-nav-xs clear"> <span class="block m-t-xs"> <strong class="font-bold text-lt">{{name}}</strong></span>                                             </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- nav -->
+                        <nav class="nav-primary hidden-xs">
+                                    <div class="text-muted text-sm hidden-nav-xs padder m-t-sm m-b-sm">Pharmacy</div>
+                                    <ul class="nav nav-main" data-ride="collapse">
+                                        <li>
+                                            <a href="/pharmacy/timeline" class="auto"> <i class="i i-statistics icon"> </i> <span class="font-bold">Overview</span>                                                </a>
+                                        </li>
+                                       <li>
+                                            <a href="#" class="auto"> <span class="pull-right text-muted"> <i class="i i-circle-sm-o text"></i> <i class="i i-circle-sm text-active"></i> </span>                                                <i class="i i-stack icon"> </i>                                                <span class="font-bold">Store</span> </a>
+                                            <ul class="nav dk">
+                                                <li>
+                                                    <a href="/pharmacy/store/inventory" class="auto"> <i class="i i-dot"></i> <span>Inventory</span> </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/pharmacy/store/issue" class="auto"> <i class="i i-dot"></i> <span>Store Issue</span> </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/pharmacy/store/issue/new" class="auto"> <i class="i i-dot"></i> <span>Issue Form</span> </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li >
+                                            <a href="#" class="auto"> <span class="pull-right text-muted"> <i class="i i-circle-sm-o text"></i> <i class="i i-circle-sm text-active"></i> </span>                                                <i class="i i-lab icon"> </i> <span class="font-bold">Dispensary</span> </a>
+                                       <ul class="nav dk">
+                                                <li>
+                                                    <a href="/pharmacy/dispensary/inventory" class="auto"> <i class="i i-dot"></i> <span>Inventory</span> </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/pharmacy/dispensary/history" class="auto"> <i class="i i-dot"></i> <span>History</span> </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/pharmacy/dispensary/new" class="auto"> <i class="i i-dot"></i> <span>Issue Form</span> </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>                                         
+                                            <a href="/pharmacy/register" class="auto"> <i class="i i-docs icon"> </i> <span class="font-bold">Register Item</span> </a>
+                                            
+                                        </li>
+                                        <li>
+                                            <a href="#" class="auto"> <span class="pull-right text-muted">  <i class="i i-circle-sm-o text"></i> <i class="i i-circle-sm text-active"></i> </span>                                  <i class="i i-grid2 icon"> </i>              <span class="font-bold">Purchase</span> </a>
+                                            
+                                            <ul class="nav dk">
+                                                <li>
+                                            <a href="/pharmacy/purchase/new" class="auto"> <i class="i i-dot"></i>   <span>Purchase</span> </a>
+                                        </li>
+                                              <li>
+                                            <a href="/pharmacy/purchase/history" class="auto"> <i class="i i-dot"></i>  <span>Purchase History</span> </a>
+                                        </li>
+                                            </ul>
+                                        </li>
+                                        
+                                        
+                                    </ul>
+                                </nav>
+                                <!-- / nav -->
+                            </div>
+                        </section>
+                        <footer class="footer hidden-xs no-padder text-center-nav-xs">
+                            <a href="modal.lockme.html" data-toggle="ajaxModal" class="btn btn-icon icon-muted btn-inactive pull-right m-l-xs m-r-xs hidden-nav-xs">
+                            <i class="i i-logout"></i> </a>
+                            <a href="#nav" data-toggle="class:nav-xs" class="btn btn-icon icon-muted btn-inactive m-l-xs m-r-xs">
+                            <i class="i i-circleleft text"></i> <i class="i i-circleright text-active"></i> </a>
+                        </footer>
+                    </section>
+                </aside>
+                <!-- /.aside -->
+                <section id="content">
+                    
+                        
+                        
+                        {% block content %} {% endblock %}
+                        
+                        
+     
+                    
+                    <a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen,open" data-target="#nav,html"></a>
+                </section>
+            </section>
+        </section>
+    </section>
+    <!-- Bootstrap -->
+    <!-- App -->
+    <script src="/js/app.js"></script>
+    <script src="/js/charts/sparkline/jquery.sparkline.min.js"></script>
+    <script src="/js/app.plugin.js"></script>
+                    <!-- datepicker -->
+                <script src="/js/datepicker/bootstrap-datepicker.js"></script>
+                <!-- slider -->
+                <script src="/js/slider/bootstrap-slider.js"></script>
+                <!-- file input -->
+                <script src="/js/file-input/bootstrap-filestyle.min.js"></script>
+                <!-- wysiwyg -->
+                <script src="/js/wysiwyg/jquery.hotkeys.js"></script>
+                <script src="/js/wysiwyg/bootstrap-wysiwyg.js"></script>
+                <script src="/js/wysiwyg/demo.js"></script>
+                <!-- markdown -->
+                <script src="/js/markdown/epiceditor.min.js"></script>
+                <script src="/js/markdown/demo.js"></script>
+                <script src="/js/chosen/chosen.jquery.min.js"></script>
+                <script src="/js/spinner/jquery.bootstrap-touchspin.min.js"></script>
+                <script src="/js/typehead/typeahead.bundle.min.js"></script>
+                <script src="/js/typehead/demo.js"></script>
+                <script src="/js/modal.ajax.js"></script>
+
+</body>
+
+</html>

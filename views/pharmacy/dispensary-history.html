@@ -1,0 +1,75 @@
+{% extends 'pharmacy-layout.html' %}
+
+
+
+
+ {% block title %} {% endblock %} 
+ 
+ 
+ 
+ {% block content %}
+ 
+                     <section class="vbox">
+                        <section class="scrollable padder">
+                            <div class="m-b-md">
+                                <h3 class="m-b-none">Dispensary History</h3> </div>
+                            <section class="panel panel-default">
+                                <div class="row wrapper">
+                                    <div class="col-sm-3">
+                                        <div class="input-group">
+                                            <input type="text" class="input-sm form-control" placeholder="Search"> <span class="input-group-btn"> <button class="btn btn-sm btn-default" type="button">Go!</button> </span>                                            </div>
+                                    </div>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-striped b-t b-light">
+                                        <thead>
+                                            <tr>
+                                                <th class="th-sortable" data-toggle="class">Date<span class="th-sort"> <i class="fa fa-sort-down text"></i> <i class="fa fa-sort-up text-active"></i> <i class="fa fa-sort"></i> </span>                                                    </th>
+                                                <th class="th-sortable" data-toggle="class">Item<span class="th-sort"> <i class="fa fa-sort-down text"></i> <i class="fa fa-sort-up text-active"></i> <i class="fa fa-sort"></i> </span>                                                    </th>
+                                                <th class="th-sortable" data-toggle="class">Hospital ID<span class="th-sort"> <i class="fa fa-sort-down text"></i> <i class="fa fa-sort-up text-active"></i> <i class="fa fa-sort"></i> </span>                                                    </th>
+                                                <th>IN/OUT</th>
+                                                <th>Dispensend to</th>
+                                                <th>Quantity</th>
+                                                <th>Unit category</th>
+                                                <th>Cost</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Jul 25, 2013</td>
+                                                <td>Idrawfast</td>
+                                                <td>RUN/HSP/05/2016</td>
+                                                <td>IN</td>
+                                                <td>Student</td>
+                                                 <td>4</td>
+                                                <td>tablets</th>
+                                                <td>5000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jul 25, 2013</td>
+                                                <td>Idrawfast</td>
+                                                <td>RUN/HSP/05/2016</td>
+                                                <td>OUT</td>
+                                                <td>Staff</td>
+                                                 <td>4</td>
+                                                <td>tablets</th>
+                                                <td>5000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jul 25, 2013</td>
+                                                <td>Idrawfast</td>
+                                                <td>RUN/HSP/05/2016</td>
+                                                <td>OUT</td>
+                                                <td>Private</td>
+                                                 <td>4</td>
+                                                <td>tablets</th>
+                                                <td>5000</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </section>
+                        </section>
+                    </section>
+ 
+ {% endblock %}
